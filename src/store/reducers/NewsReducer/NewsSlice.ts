@@ -1,20 +1,18 @@
-import {INews} from "../../../models/INews";
-import {createSlice} from "@reduxjs/toolkit";
+import {INews} from '../../../models/INews';
+import {createSlice} from '@reduxjs/toolkit';
 
 interface NewsState {
-    muchNews: Array<INews>
+    muchNews: Array<INews>;
 }
 
 const initialState: NewsState = {
-    muchNews: []
-}
+    muchNews: [],
+};
 
 export const newsSlice = createSlice({
-    name: "news",
+    name: 'news',
     initialState,
-    reducers: {
-
-    }
-})
+    reducers: {},
+});
 
 export default newsSlice.reducer;

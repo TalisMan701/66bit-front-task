@@ -1,12 +1,8 @@
 import React, {FC} from 'react';
-import classes from './News.module.scss'
+import classes from './News.module.scss';
 
 const News: FC = () => {
-    return (
-        <div>
-
-        </div>
-    );
+    return <div></div>;
 };
 
 export default News;
