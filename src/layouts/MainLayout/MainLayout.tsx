@@ -10,9 +10,11 @@ interface MainLayoutProps {
 
 const MainLayout: FC<MainLayoutProps> = ({children}) => {
     return (
-        <div>
+        <div className={classes.wrapper}>
             <Header />
-            <Outlet />
+            <div className={classes.content}>
+                <Outlet />
+            </div>
             <TabBar />
         </div>
     );
