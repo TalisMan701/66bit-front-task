@@ -6,6 +6,7 @@ import {useEffect} from 'react';
 import {useAppDispatch, useAppSelector} from './hooks/reduxHooks';
 import {getTheme} from './store/reducers/ThemesReducer/ThemesActionCreators';
 import {ThemeNameType} from './models/ThemeNameType';
+import Greck from './components/Greck/Greck';
 
 export const titleMap = [
     {path: '/', title: 'Новости'},
@@ -23,7 +24,8 @@ function App() {
         return <div>Loading theme</div>;
     }
     return (
-        <BrowserRouter>
+        <Greck />
+        /* <BrowserRouter>
             <Routes>
                 <Route element={<MainLayout />}>
                     <Route path={''} element={<News />} />
@@ -31,7 +33,7 @@ function App() {
                     <Route path={'*'} element={<div>404 not found</div>} />
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </BrowserRouter>*/
     );
 }
 
