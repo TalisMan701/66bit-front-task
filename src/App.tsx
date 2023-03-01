@@ -6,7 +6,8 @@ import {useEffect} from 'react';
 import {useAppDispatch, useAppSelector} from './hooks/reduxHooks';
 import {getTheme} from './store/reducers/ThemesReducer/ThemesActionCreators';
 import {ThemeNameType} from './models/ThemeNameType';
-import Greck from './components/Greck/Greck';
+import Greck from './pages/Greck/Greck';
+import CaseOpener from './pages/CaseOpener/CaseOpener';
 
 export const titleMap = [
     {path: '/', title: 'Новости'},
@@ -24,7 +25,7 @@ function App() {
         return <div>Loading theme</div>;
     }
     return (
-        <Greck />
+        <CaseOpener />
         /* <BrowserRouter>
             <Routes>
                 <Route element={<MainLayout />}>
